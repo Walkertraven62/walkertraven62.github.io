@@ -17,11 +17,19 @@
     </header>
     <main>
         <!-- Articles content will go here -->
-        <h2>Articles Page</h2>
-        <p>This is where you'll find the latest articles.</p>
+        <h2>Articles</h2>
+        <button onclick="showFullArticle('article1')">Article 1</button>
+        <button onclick="showFullArticle('article2')">Article 2</button>
+        <button onclick="showFullArticle('article3')">Article 3</button>
     </main>
     <footer>
         <p>&copy; 2024 Esports News App</p>
     </footer>
+
+    <script>
+        function showFullArticle(articleId) {
+            window.location.href = `${articleId}.html`;
+        }
+    </script>
 </body>
 </html>
