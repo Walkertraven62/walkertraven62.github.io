@@ -36,4 +36,3 @@ window.onload = function() {
     document.getElementById("articles_button").addEventListener("click", showArticlesTab);
     document.getElementById("scores_button").addEventListener("click", showScoresTab);
 };
-
