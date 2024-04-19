@@ -1,6 +1,6 @@
 // esports_news.js
 
-const apiKey = 'YOUR_API_KEY';
+const apiKey = 'bb1db79da4msh64e4610ec62a309p189e3cjsnd6d816829983';
 const apiUrl = 'https://esportapi1.p.rapidapi.com/api/esport/search/ATK';
 
 function showHomeTab() {
