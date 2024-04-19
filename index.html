@@ -3,81 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esports News</title>
+    <title>Esports News App</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="home_tab" style="display: none;">
-        <h1>Welcome</h1>
-    </div>
-    <div id="articles_tab" style="display: none;">
-        <h1>Articles coming soon</h1>
-        <button onclick="showAddArticleWindow()">Add Article</button>
-    </div>
-    <div id="scores_tab" style="display: none;">
-        <h1>Call of Duty League</h1>
-        <p id="scores_text">Atlanta Faze 4-1 Optic Texas<br>
-                            New York Subliners 3-2 LA Thieves<br>
-                            Dallas Empire 3-0 LA Guerrillas<br>
-                            Florida Mutineers 3-1 Toronto Ultra<br>
-                            Minnesota ROKKR 3-2 Paris Legion</p>
-    </div>
-
-    <form id="loginForm">
-        <input type="text" id="username" placeholder="Username">
-        <input type="password" id="password" placeholder="Password">
-        <button type="submit">Login</button>
-    </form>
-
-    <script>
-        // Add the JavaScript code here
-        // Client-side login logic
-        document.getElementById('loginForm').addEventListener('submit', async (e) => {
-          e.preventDefault();
-          
-          const username = document.getElementById('username').value;
-          const password = document.getElementById('password').value;
-          
-          try {
-            const response = await fetch('/login', {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json'
-              },
-              body: JSON.stringify({ username, password })
-            });
-            
-            if (response.ok) {
-              // Login successful, redirect or show logged-in state
-              console.log('Login successful');
-            } else {
-              // Login failed, display error message
-              const data = await response.json();
-              console.error(data.message);
-            }
-          } catch (error) {
-            console.error('Login failed:', error);
-          }
-        });
-
-        // Client-side logout logic
-        async function logout() {
-          try {
-            const response = await fetch('/logout', {
-              method: 'POST'
-            });
-            
-            if (response.ok) {
-              // Logout successful, redirect or show logged-out state
-              console.log('Logout successful');
-            } else {
-              // Logout failed, display error message
-              const data = await response.json();
-              console.error(data.message);
-            }
-          } catch (error) {
-            console.error('Logout failed:', error);
-          }
-        }
-    </script>
+    <header>
+        <h1>Esports News</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="scores.html">Scores</a>
+            <a href="articles.html">Articles</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Main content will go here -->
+        <h2>Welcome to Esports News</h2>
+        <p>This is the home page of the Esports News app.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Esports News App</p>
+    </footer>
 </body>
 </html>
+
