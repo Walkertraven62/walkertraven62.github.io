@@ -13,12 +13,7 @@ function showArticlesTab() {
 function showScoresTab() {
     hideAllTabs();
     document.getElementById("scores_tab").style.display = "block";
-    fetchScores();
-}
-
-function fetchScores() {
-    // Fetch live scores from RapidAPI
-    // Update this function based on your RapidAPI integration
+    //fetchScores(); // Uncomment this line if you have a function to fetch scores
 }
 
 function showFullArticle(articleId) {
@@ -37,18 +32,8 @@ window.onload = function() {
     showHomeTab();
 
     // Buttons
-    const homeButton = document.getElementById("home_button");
-    if (homeButton) {
-        homeButton.addEventListener("click", showHomeTab);
-    }
-    
-    const articlesButton = document.getElementById("articles_button");
-    if (articlesButton) {
-        articlesButton.addEventListener("click", showArticlesTab);
-    }
-
-    const scoresButton = document.getElementById("scores_button");
-    if (scoresButton) {
-        scoresButton.addEventListener("click", showScoresTab);
-    }
+    document.getElementById("home_button").addEventListener("click", showHomeTab);
+    document.getElementById("articles_button").addEventListener("click", showArticlesTab);
+    document.getElementById("scores_button").addEventListener("click", showScoresTab);
 };
+
