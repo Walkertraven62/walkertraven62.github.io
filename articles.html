@@ -3,25 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article 1</title>
+    <title>Esports News App - Articles</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Article 1</h1>
+        <h1>Esports News - Articles</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="scores.html">Scores</a>
+            <a href="index.html" id="home_button">Home</a>
+            <a href="articles.html" id="articles_button">Articles</a>
+            <a href="scores.html" id="scores_button">Scores</a>
             <a href="login.html">Login</a>
         </nav>
     </header>
     <main>
-        <h2>Navi Wins Paris Major</h2>
-        <p>Navi Defeats Faze Clan 2-0 to win the first ever CS2 Major Championship</p>
+        <div id="articles_tab" class="tab">
+            <h2>Articles</h2>
+            <button onclick="showFullArticle('article1')">Article 1</button>
+        </div>
     </main>
     <footer>
         <p>&copy; 2024 Esports News App</p>
     </footer>
+
+    <script src="esports_news.js"></script>
 </body>
 </html>
-
