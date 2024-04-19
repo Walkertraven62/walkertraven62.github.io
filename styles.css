@@ -39,3 +39,12 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+/* Style for tabs */
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: block;
+}
