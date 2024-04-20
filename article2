@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blizzard Creates the OWCS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Blizzard Creates the OWCS</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="scores.html">Scores</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Blizzard creates the OWCS</h2>
+        <p>Blizzard Entertainment has endeavored to preserve the competitive scene of Overwatch League following a challenging 2023 that resulted in the league's dissolution. In light of this, it revealed on January 23 the Overwatch Champions Series (OWCS), a revamp for its esports division.
+
+This brand-new series will be its primary worldwide competitive circuit, open to players throughout North America (NA), Europe, Middle East, and North Africa (EMEA), as well as South Korea, Japan, and Pacific (Asia). The developer stated that their "esports efforts in 2024 will be multifaceted."</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Esports News App</p>
+    </footer>
+</body>
+</html>
