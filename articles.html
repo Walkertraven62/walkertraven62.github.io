@@ -11,26 +11,23 @@
         <h1>Esports News - Articles</h1>
         <nav>
             <a href="index.html">Home</a>
-            <a href="#" class="active">Articles</a>
             <a href="scores.html">Scores</a>
             <a href="login.html">Login</a>
         </nav>
     </header>
     <main>
-        <div id="articles_tab" class="tab">
-            <h2>Articles</h2>
-            <div class="article">
-                <h3>Article 1</h3>
-                <p>This is the content of Article 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="article1.html">Read More</a>
-            </div>
-        </div>
+        <!-- Articles content will go here -->
+        <h2>Articles</h2>
+        <button onclick="showFullArticle('article1')">Article 1</button>
     </main>
-    
     <footer>
-        <p>&copy; 2024 Esports News App</p>
+        <p>&copy; 2024 Made By Traven Walker</p>
     </footer>
 
-    <script src="esports_news.js"></script>
+    <script>
+        function showFullArticle(articleId) {
+            window.location.href = `${articleId}.html`;
+        }
+    </script>
 </body>
 </html>
