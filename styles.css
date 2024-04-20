@@ -28,10 +28,11 @@ nav a:hover {
 
 main {
     padding: 20px;
+    color: #000
 }
 
 footer {
-    background-color: #fff;
+    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px;
