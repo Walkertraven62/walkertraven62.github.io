@@ -1,1 +1,1 @@
-# Welcome to my app. This is VERY BAREBONES! This app is not fleshed out entirely but will see updates in the future. Thank you for visiting the site.
+# Welcome to the Esports News Network. This app is VERY BAREBONES! Content on this app is not fleshed out entirely but will see updates in the future. More updates will come in the future, thank you for visiting the site.
